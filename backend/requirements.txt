@@ -6,3 +6,4 @@ spacy
 scikit-learn
 PyPDF2
 pytest
+flask-cors
