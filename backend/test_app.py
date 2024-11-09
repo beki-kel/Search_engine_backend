@@ -2,7 +2,9 @@ import pytest
 import re
 from io import BytesIO
 from flask import Flask, jsonify, request
-from app import process_text, chunk_text  # Assuming your app is in 'app.py'
+from app import process_text, chunk_text
+import nltk
+nltk.download('punkt')
 
 # Test the process_text function (checking text cleaning and lemmatization)
 def test_process_text():
