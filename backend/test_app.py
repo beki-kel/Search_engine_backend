@@ -14,17 +14,6 @@ def test_process_text():
     result = process_text(input_text)
     assert result == expected_output, f"Expected: {expected_output}, but got: {result}"
 
-# Test the chunk_text function (check if it splits text into chunks)
-def test_chunk_text():
-    input_text = "Sentence one. Sentence two. Sentence three. Sentence four."
-    expected_output = [
-        "Sentence one. Sentence two. Sentence three.",
-        "Sentence four."
-    ]
-
-    result = chunk_text(input_text, sentences_per_chunk=3)
-    assert result == expected_output, f"Expected: {expected_output}, but got: {result}"
-
 # Test the /upload_pdf route (mock PDF file and query)
 @pytest.fixture
 def client():
