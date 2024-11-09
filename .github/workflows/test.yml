@@ -23,6 +23,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        cd /backend
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # Ensure your requirements.txt is in the repo
 
