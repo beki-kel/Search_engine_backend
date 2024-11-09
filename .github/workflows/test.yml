@@ -25,7 +25,9 @@ jobs:
       run: |
         cd backend
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # Ensure your requirements.txt is in the repo
+        pip install -r requirements.txt
+        python -c "import nltk; nltk.download('punkt')" 
+        
 
     - name: Install NLTK data
       run: |
