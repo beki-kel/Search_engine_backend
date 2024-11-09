@@ -5,3 +5,4 @@ nltk
 spacy
 scikit-learn
 PyPDF2
+pytest
